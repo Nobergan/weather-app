@@ -1,0 +1,123 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+
+  background-color: #212121;
+
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 120%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .container {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+img {
+  display: block;
+}
+
+a {
+  // font-style: none;
+  // text-decoration: none;
+  // display: inline-block;
+  cursor: pointer;
+}
+
+svg {
+  vertical-align: baseline;
+  // fill: #ffffff;
+}
+
+button {
+  // display: block;
+  // justify-content: center;
+  // align-items: center;
+
+  // padding: 0;
+
+  outline: none;
+  cursor: pointer;
+  // border: none;
+  // background-color: transparent;
+}
+
+button:focus,
+button:active,
+button:hover {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.not-hidden {
+  display: block;
+}
+
+.valid {
+  border: 3px solid green;
+}
+
+.invalid {
+  border: 3px solid red;
+}

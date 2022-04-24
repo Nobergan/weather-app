@@ -1,0 +1,99 @@
+.card {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+
+    color: #ffffff;
+    background-color: #000000d0;
+    border-radius: 30px;
+}
+
+.card__title {
+    margin: 0 0 15px;
+    text-align: center;
+    color: orange;
+}
+
+.card__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__input {
+    width: calc(100% - 100px);
+    padding: 10px 16px;
+
+    font-size: 100%;
+
+    background-color: #7c7c7c2b;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 24px;
+    outline: none;
+}
+
+.card__input:focus {
+    background-color: #7c7c7c6b;
+}
+
+.card__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 44px ;
+    width: 44px;
+    margin: 8px;
+
+    color: #ffffff;
+    background-color: #7c7c7c2b;
+
+    border-radius: 50%;
+    border: none;
+
+    transition: 0.2s ease-in-out;
+}
+
+.card__btn:hover {
+    background-color: #7c7c7c6b;
+}
+
+.weather__temp {
+    margin: 0 0 10px;
+    font-size: 45px;
+    color: orange;
+}
+
+.weather__flex {
+    display: flex;
+    align-items: center;
+}
+
+.weather__descr {
+    margin: 0 0 0 10px;
+
+    text-transform: capitalize;
+}
+
+.weather__humidity {
+    margin: 0 0 5px;
+}
+
+.weather.loading {
+    position: relative;
+    visibility: hidden;
+    max-height: 20px;
+}
+
+.weather.loading:after {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    
+    visibility: visible;
+    content: "Загружаємо...";
+    color: #ffffff;
+}
